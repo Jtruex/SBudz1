@@ -1,2 +1,18 @@
 Toast:
 https://github.com/api-evangelist/toast
+
+
+Aloha:
+1. The BlackCat/ALPHV Ransomware Attack (April 2023)
+
+In mid-April 2023, NCR suffered a massive ransomware attack carried out by the BlackCat (ALPHV)  While in-store physical POS terminals could still process payments offline, back-of-house cloud tools, loyalty programs, inventory communications, and labor scheduling were knocked offline for over 100,000 restaurant locations.
+• Data Extortion: The attackers claimed to have stolen credentials belonging to NCR's customers during the breach.
+• GitHub Connection: Cybersecurity researchers and incident response teams actively published Yara rules, network defense scripts, and general indicators of compromise (IoCs) for BlackCat/ALPHV ransomware variants across open-source GitHub repositories to help network administrators audit their environments.
+
+2. The CMCAgent Critical Vulnerability (CVE-2021-3122)
+
+If you are looking for specific proof-of-concept (PoC) exploit scripts, scanners, or technical code blueprints on GitHub, you are likely looking for material related to CVE-2021-3122.
+• The Flaw: This is a critical unauthenticated Remote Code Execution (RCE) vulnerability with a CVSS score of 9.8. It impacts the NCR Aloha POS Back of House cmcAgent.exe (Command Center Agent) service.
+• The Mechanism: When the service is accidentally configured to be internet-facing (typically listening on port 8089), an attacker can send malicious XML requests to execute arbitrary commands with SYSTEM-level privileges.
+• Real-World Exploitation: Threat actors actively exploited this in the wild to drop credit card data scrapers, point-of-sale malware (like BlackPOS or RampagePOS), cryptominers, and ransomware.
+• GitHub Connection: There are several community-maintained GitHub repositories containing automated Python scanners, Nuclei templates, and vulnerability verification scripts designed to check whether an Aloha POS implementation has this port exposed and vulnerable to the exploit.
