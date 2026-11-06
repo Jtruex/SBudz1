@@ -1,3 +1,6 @@
+Resources:
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/08ea40e77db3f42ef8f20c65196f3936a19b6c86/SQL%20Injection
+
 
 $query="SELECT * FROM users WHERE username='" . $_REQUEST['user'] . "' and (password='".$_REQUEST['pass']."')";
 $result=mysql_query($query);
