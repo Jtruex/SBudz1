@@ -1,5 +1,8 @@
 # SBudz1
 
+GitHub Directory:
+https://docs.github.com/en
+
 Project for the Studbudz
 
 A work in progress in creating something.
